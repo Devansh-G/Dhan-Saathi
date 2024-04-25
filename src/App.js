@@ -26,7 +26,7 @@ function App(){
       return prevValue.filter((item,index) => {
         if(id===index)
           setSpent(prevValue =>{
-            return (Number(prevValue) - Number(item.cost)/2);
+            return (Number(prevValue) - Number(item.cost));
           })
         return id!==index;
       });
